@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+torch = "*"
+torchvision = "*"
+torchaudio = "*"
+jupyterlab = "*"
+jupyterlab-language-pack-ja-jp = "*"
+ipykernel = "*"
+
+[dev-packages]
+
+[scripts]
+lab = "jupyter-lab"
+generate-kernel = "python -m ipykernel install --user --name=dl"
+
+[requires]
+python_version = "3.11"
